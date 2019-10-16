@@ -1,0 +1,29 @@
+<plugin
+		id="com.vp.plugin.sample.requirementdiagramplugin"
+		name="Requirement Diagram plugin"
+		description="Sample plugin for generating Requirement Diagram"
+		provider="Visual Paradigm"
+		class="com.vp.plugin.sample.requirementdiagram.RequirementDiagramPlugin">
+	
+	<actionSets>
+  		<actionSet id="com.vp.plugin.sample.requirementdiagram.actionset1">
+			<toolbar
+					id="com.vp.plugin.sample.requirementdiagram.actionset1.toolbar1"
+					orientation="north"
+					index="last"/>
+			
+			<action
+					id="com.vp.plugin.sample.requirementdiagram.actionset1.RequirementDiagramActionControl"
+					actionType="generalAction"
+      		name="Requirement Diagram plugin"
+		      description="Sample plugin for generating Requirement Diagram"
+					style="normal"
+          icon="icon/icon.png"
+          tooltip="Requirement Diagram"
+					toolbarPath="com.vp.plugin.sample.requirementdiagram.actionset1.toolbar1/#">
+				<actionController class="com.vp.plugin.sample.requirementdiagram.RequirementDiagramActionControl"/>
+			</action>
+		</actionSet>
+
+	</actionSets>	
+</plugin>
